@@ -1,0 +1,25 @@
+
+//Modificador de Acessos - public, private e protected
+
+public class Cliente {
+	
+	//O atributo dentro de uma classe modelo, sempre deve ser privado
+	
+	private String nome; 
+	private String CPF;
+	
+	//Getter and setters
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getNome() {
+		return this.nome;
+	}
+	
+	public void setCPF(String cpf) {
+		this.CPF = cpf;
+	}
+	public String getCPF() {
+		return this.CPF;
+	}
+}

@@ -1,0 +1,10 @@
+
+//Modificador de Acessos - public, private e protected
+
+public class Cliente {
+	
+	//O atributo dentro de uma classe modelo, sempre deve ser privado
+	
+	private String nome; 
+	private String CPF;
+}

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+		short B, H;
+		double A;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Digite a base do triângulo");
+		B = sc.nextShort();
+		System.out.println("Digite a altura do triângulo");
+		H = sc.nextShort();
+		A = (B * H) / 2;
+		System.out.println("Área do triangulo: "+A);
+	}
+}
