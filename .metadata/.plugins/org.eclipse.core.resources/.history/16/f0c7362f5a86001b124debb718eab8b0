@@ -1,5 +1,0 @@
-
-//Modificador de Acessos - public, private e protected
-public class Cliente {
-	String nome, CPF;
-}

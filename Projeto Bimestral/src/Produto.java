@@ -1,59 +1,56 @@
 import java.util.Date;
 
-//Modificador de Acessos - public, private e protected
-
-public class Cliente{
+public class Produto {
 	
-	public Cliente () {
+	public Produto() {
 		this.estaAtivo = true;
 		this.criadoEm = new Date();
-		System.out.println("Esta rodando....");
+		System.out.println("Esta rodando.....");
 	}
-	//O atributo dentro de uma classe modelo, sempre deve ser privado
 	
-	private String nome; 
-	private String cpf;
+	private String nome;
+	private double price;
+	private int quant;
 	private boolean estaAtivo;
 	private Date criadoEm;
 	
-	//Getters and setters
-	
-	public String getNome() {
-		return nome;
-	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public String getCpf() {
-		return cpf;
+	public String getNome() {
+		return this.nome;
 	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	
+	public void setPrice (double price) {
+		this.price = price;
 	}
-
+	public double getPrice() {
+		return this.price;
+	}
+	
+	public void setQuant(int quant) {
+		this.quant = quant;
+	}
+	public int getQuant() {
+		return this.quant;
+	}
 	public boolean isEstaAtivo() {
 		return estaAtivo;
 	}
-
 	public void setEstaAtivo(boolean estaAtivo) {
 		this.estaAtivo = estaAtivo;
 	}
-
 	public Date getCriadoEm() {
 		return criadoEm;
 	}
-
 	public void setCriadoEm(Date criadoEm) {
 		this.criadoEm = criadoEm;
 	}
 	
 	@Override
 	public boolean equals(Object obj) {
-		Cliente cliente = (Cliente) obj;
-		if (cliente.getNome().equals(nome) && cliente.getCpf().equals(cpf)) 
+		Produto produto = (Produto) obj;
+		if (produto.getNome().equals(nome)) 
 		{
 			return true;
 		}
@@ -62,6 +59,6 @@ public class Cliente{
 
 	@Override
 	public String toString() {
-		return ("Nome: " +nome+ " CPF: " +cpf);
+		return ("Nome: " +nome+ " Preço: " +price+ "Quantidade: " +quant);
 	}
 }
