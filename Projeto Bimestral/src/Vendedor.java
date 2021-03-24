@@ -49,6 +49,6 @@ public class Vendedor {
 	
 	@Override
 	public String toString() {
-		return ("Nome: " +nome+ " CPF: " +cpf);
+		return ("Nome: " +nome+ " // CPF: " +cpf);
 	}
 }

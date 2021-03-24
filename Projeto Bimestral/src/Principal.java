@@ -5,9 +5,9 @@ public class Principal {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		Cliente cliente = new Cliente();
-		Vendedor vendedor = new Vendedor();
-		Produto produto = new Produto();
+		//Cliente cliente = new Cliente();
+		//Vendedor vendedor = new Vendedor();
+		//Produto produto = new Produto();
 		ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 		ArrayList<Vendedor> vendedores = new ArrayList<Vendedor>();
 		ArrayList<Produto> produtos = new ArrayList<Produto>();
@@ -28,19 +28,23 @@ public class Principal {
 			opcao = sc.nextInt();
 			switch (opcao) {
 				case 1: 
+					Cliente cliente = new Cliente();
 					System.out.println("\n -- Cadastrar Cliente --");
 					System.out.println("\nDigite o nome do Cliente");
 					cliente.setNome(sc.next());
 					System.out.println("\nDigite o CPF do Cliente");
 					cliente.setCpf(sc.next());
 					clientes.add(cliente);
-					System.out.println("Nome: " +cliente.getNome()+ " CPF: " +cliente.getCpf());
+					//System.out.println("Nome: " +cliente.getNome()+ " CPF: " +cliente.getCpf());
 					break;
 				case 2:
 					System.out.println("\n -- Listar Clientes --");
-					System.out.println(cliente.toString());
+			        for(int i = 0; i < clientes.size(); i++){
+			            System.out.println(clientes.get(i));
+			        }
 					break;
 				case 3:
+					Vendedor vendedor = new Vendedor();
 					System.out.println("\n -- Cadastrar Vendedor --");
 					System.out.println("\nDigite o nome do Vendedor");
 					vendedor.setNome(sc.next());
@@ -50,8 +54,12 @@ public class Principal {
 					break;
 				case 4:
 					System.out.println("\n -- Listar Vendedores --");
+					for (int i = 0; i < vendedores.size(); i++) {
+						System.out.println(vendedores.get(i));
+					}
 					break;
 				case 5:
+					Produto produto = new Produto();
 					System.out.println("\n -- Cadastrar Produto --");
 					System.out.println("\nDigite o nome do Produto");
 					produto.setNome(sc.next());
@@ -63,6 +71,9 @@ public class Principal {
 					break;
 				case 6:
 					System.out.println("\n -- Listar Produtos --");
+					for (int i = 0; i < produtos.size(); i++) {
+						System.out.println(produtos.get(i));
+					}
 					break;
 				case 7:
 					System.out.println("\n -- Registrar Venda --");
