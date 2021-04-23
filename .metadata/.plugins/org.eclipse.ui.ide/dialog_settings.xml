@@ -13,6 +13,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\andre\Desktop\3º Semestre\Desenvolvi. de Software\Workspace\Vendas"/>
+			<item value="C:\Users\andre\Downloads\DesenvolvimentoSoftwareTerca-master"/>
 			<item value="C:\Users\andre\Desktop\oefeningsessie2"/>
 			<item value="C:\Users\andre\Desktop\Nova pasta"/>
 		</list>

@@ -14,7 +14,22 @@
     <fullyQualifiedTypeName name="jdk.internal.misc.FileSystemOption"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="jdk.vm.ci.meta.JavaKind.FormatWithToString"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="models.Cliente"/>
+    <fullyQualifiedTypeName name="models.Produto"/>
+    <fullyQualifiedTypeName name="views.ListarClientes"/>
+    <fullyQualifiedTypeName name="controllers.ClienteController"/>
+    <fullyQualifiedTypeName name="views.CadastrarCliente"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Repeatable"/>
+    <fullyQualifiedTypeName name="controllers.VendedorController"/>
+    <fullyQualifiedTypeName name="models.Vendedor"/>
+    <fullyQualifiedTypeName name="views.CadastrarVendedor"/>
+    <fullyQualifiedTypeName name="views.ListarVendedor"/>
+    <fullyQualifiedTypeName name="controllers.ProdutoController"/>
+    <fullyQualifiedTypeName name="views.ListarProduto"/>
+    <fullyQualifiedTypeName name="views.CadastrarProduto"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
